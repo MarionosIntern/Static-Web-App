@@ -2,18 +2,37 @@
 <html lang = "en">
     <head>
         <title> Animal Gallery </title>
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
+        <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="details.html">Details</a>
+        <a href="new-animal-form.html">Add Animal</a>
+        <a href="about.html">About</a>
+        </nav>
+
         <h1> Animal Gallery </h1>
         <p>
             Welcome to the Animal Gallery! The hub for everything ANIMAL!! Here you cans search for different animals and see pictures with descriptions for them. 
         </p>
         
         <img src  = "Cat.jpeg" alt = "Maine Coon" width = "300" height = "200">
-        <p> The Maine Coon: The largest and oldest breed <br>
-            of domesticated cats in North America. <br> 
-            They're palyful and warm with a thick coat. 
+
+        <p> The Maine Coon: The largest and oldest breed <br>       
+            of domesticated cats in North America. <br>            
+            They're playful and warm with a thick coat.             
+    
         </p>
+        
+        <img src="rac.jpeg"  style="position: absolute; top: 145px; left: 400px;" alt="Racoon" width = "300" height="200">
+
+        <p>
+            Raccoon: This one is specically called the North Carolina <br>
+            or Common Racoon. It's the largest of the procyonid family. <br>
+            With a dense gray/black fur with light gray/white accents. 
+        </p>
+    
 
         <form action = "/search" method = "post">
             <label for = "animal"> Enter an animal name: </label>
