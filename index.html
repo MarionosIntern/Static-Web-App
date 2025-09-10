@@ -1,39 +1,80 @@
 <!doctype html>
 <html lang = "en">
+
+
     <head>
         <title> Animal Gallery </title>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                padding: 20px;
+                background-color: #f4f4f4;
+            }
+            h1 {
+                color: #333;
+            }
+            form {
+                margin-top: 20px;
+            }
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+            input[type="text"] {
+                width: 300px;
+                padding: 8px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            input[type="submit"] {
+                padding: 10px 15px;
+                background-color: #28a745;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #218838;
+            }
+        </style>
+            <div class = "pure-menu pure-menu-horizontal">
+                <a href ="#" class = "pure-menu-heading pure-menu-link">Animal Gallery</a>
+                <ul class = "pure-menu-list">
+                    <li class = "pure-menu-item">
+                        <a href = "index.html" class = "pure-menu-link">Home</a>
+                    </li>
+                    <li class = "pure-menu-item">
+                        <a href = "details.html" class = "pure-menu-link">Details</a>
+                    </li>
+                    <li class = "pure-menu-item">
+                        <a href = "about.html" class = "pure-menu-link">About</a>
+                    </li>
+                    <li class = "pure-menu-item">
+                        <a href = "new-animal-form.html" class = "pure-menu-link">New Animal Form</a>
+                    </li>
+                </ul>
+            </div>
+
     </head>
     <body>
-        <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="details.html">Details</a>
-        <a href="new-animal-form.html">Add Animal</a>
-        <a href="about.html">About</a>
-        </nav>
-
-        <h1> Animal Gallery </h1>
-        <p>
-            Welcome to the Animal Gallery! The hub for everything ANIMAL!! Here you cans search for different animals and see pictures with descriptions for them. 
-        </p>
-        
-        <img src  = "Cat.jpeg" alt = "Maine Coon" width = "300" height = "200">
-
-        <p> The Maine Coon: The largest and oldest breed <br>       
-            of domesticated cats in North America. <br>            
-            They're playful and warm with a thick coat.             
+       
     
-        </p>
-        
-        <img src="rac.jpeg"  style="position: absolute; top: 145px; left: 400px;" alt="Racoon" width = "300" height="200">
-
-        <p>
-            Raccoon: This one is specically called the North Carolina <br>
-            or Common Racoon. It's the largest of the procyonid family. <br>
-            With a dense gray/black fur with light gray/white accents. 
-        </p>
-    
-
+        <div>
+            <style>
+                .button-Search{
+                    color: white;
+                    border-radius: 4px;
+                    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+                    background: rgb(66, 184, 221);
+                }
+            </style>
+            <button class ="button-Search pure-button">Search</button>
+        </div>
         <form action = "/search" method = "post">
             <label for = "animal"> Enter an animal name: </label>
             <input type = "text" id = "animal" name = "animal">
