@@ -1,84 +1,95 @@
 <!doctype html>
 <html lang = "en">
 
-
     <head>
         <title> Animal Gallery </title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 20px;
-                padding: 20px;
-                background-color: #f4f4f4;
-            }
-            h1 {
-                color: #333;
-            }
-            form {
-                margin-top: 20px;
-            }
-            label {
-                display: block;
-                margin-bottom: 8px;
-                font-weight: bold;
-            }
-            input[type="text"] {
-                width: 300px;
-                padding: 8px;
-                margin-bottom: 10px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-            }
-            input[type="submit"] {
-                padding: 10px 15px;
-                background-color: #28a745;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-            input[type="submit"]:hover {
-                background-color: #218838;
-            }
-        </style>
-            <div class = "pure-menu pure-menu-horizontal">
-                <a href ="#" class = "pure-menu-heading pure-menu-link">Animal Gallery</a>
-                <ul class = "pure-menu-list">
-                    <li class = "pure-menu-item">
-                        <a href = "index.html" class = "pure-menu-link">Home</a>
-                    </li>
-                    <li class = "pure-menu-item">
-                        <a href = "details.html" class = "pure-menu-link">Details</a>
-                    </li>
-                    <li class = "pure-menu-item">
-                        <a href = "about.html" class = "pure-menu-link">About</a>
-                    </li>
-                    <li class = "pure-menu-item">
-                        <a href = "new-animal-form.html" class = "pure-menu-link">New Animal Form</a>
-                    </li>
-                </ul>
-            </div>
-
+        <link rel="stylesheet" href="style.css">
+        <h1> Animal Gallery</h1> 
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+        </nav>
+        <div class = "pure-menu pure-menu-horizontal">
+            <ul class = "pure-menu-list">
+                <li class = "pure-menu-item">
+                    <a href = "index.html" class = "pure-menu-link">Home</a>
+                </li>
+                <li class = "pure-menu-item">
+                    <a href = "details.html" class = "pure-menu-link">Details</a>
+                </li>
+                <li class = "pure-menu-item">
+                    <a href = "about.html" class = "pure-menu-link">About</a>
+                </li>
+                <li class = "pure-menu-item">
+                    <a href = "new-animal-form.html" class = "pure-menu-link">New Animal Form</a>
+                </li>
+            </ul>
+        </div>
     </head>
     <body>
-       
-    
-        <div>
-            <style>
-                .button-Search{
-                    color: white;
-                    border-radius: 4px;
-                    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
-                    background: rgb(66, 184, 221);
-                }
-            </style>
-            <button class ="button-Search pure-button">Search</button>
-        </div>
-        <form action = "/search" method = "post">
-            <label for = "animal"> Enter an animal name: </label>
-            <input type = "text" id = "animal" name = "animal">
-            <input type = "submit" value = "Search">
-        </form>
+
+        <h2> Welcome to the Animal Gallery. The hub for all things animal! <br>
+            You can add your favorite animal to the gallery or take a look <br>
+            at the animals already posted.
+        </h2>
+
+
+
+        <button class = "pure-button pure-button-active">Search</button>
+        <input type = "text" placeholder = "Search for an animal...">
+
+        <section id = "gallery" class = "grid">
+            <article class = "box" data-type = "Mammal" data-species = "Maine Coon">
+                <img src = "Cat.jpeg">
+                <div class = "box-body">
+                    <h3>Maine Coon</h3>
+                    <p class="specs"> Type: Mammal -- Species: Maine Coon </p>
+                    <p> The largest of the domesticated cats with playful natures, they're known as gentle giants.</p>
+                    <a class ="btn" href = "details.html">View Details</a>
+                </div>
+            </article>
+
+            <article class = "box" data-type = "Mammal" data-species = "Raccoon">
+                <img src = "rac.jpeg">
+                <div class = "box-body">
+                    <h3>Maine Coon</h3>
+                    <p class="specs"> Type: Mammal -- Species: Raccoon </p>
+                    <p> Native to North American, these little creatures have a robust coat.</p>
+                    <a class ="btn" href = "details.html">View Details</a>
+                </div>
+            </article>
+
+            <article class = "box" data-type = "Mammal" data-species = "Lion">
+                <img src = "image.png">
+                <div class = "box-body">
+                    <h3>Maine Coon</h3>
+                    <p class="specs"> Type: Mammal -- Species: Lion </p>
+                    <p> Huge mane, the king of the jungle, and fierce looks..this is the Lion..</p>
+                    <a class ="btn" href = "details.html">View Details</a>
+                </div>
+            </article>
+
+             <article class = "box" data-type = "Reptile" data-species = "Newborn Timber Rattlesnake">
+                <img src = "image-1.png">
+                <div class = "box-body">
+                    <h3>Maine Coon</h3>
+                    <p class="specs"> Type: Reptile -- Species: Newborn Timber Rattlesnake </p>
+                    <p> With camofluage and venom laced fangs, the rattlesnake can <br>
+                        protect itself against any predator</p>
+                    <a class ="btn" href = "details.html">View Details</a>
+                </div>
+            </article>
+            
+             <article class = "box" data-type = "Avians" data-species = "Eagle">
+                <img src = "image-2.png">
+                <div class = "box-body">
+                    <h3>Maine Coon</h3>
+                    <p class="specs"> Type: Avians -- Species: Eagle </p>
+                    <p> The representative of America with a bold yellow beak, the eagle.</p>
+                    <a class ="btn" href = "details.html">View Details</a>
+                </div>
+            </article>
+        </section>
+
+
     </body>
 </html>
