@@ -3,6 +3,7 @@
 
 .pure-menu-item a{
     color:var(--text);
+
     
 }
 
@@ -30,4 +31,8 @@
 }
 .specs{
     color:var(--specs)
+}
+
+form{
+    padding: 1rem;
 }
